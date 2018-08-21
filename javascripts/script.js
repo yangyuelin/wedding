@@ -112,7 +112,7 @@ $(function() {
 				success: function(response) {
 					console.log(response);
 					$('#alertModal').modal('show');
-					$(".closes").click(function(event) {
+					$(".closes, .modal").click(function(event) {
 						/* Act on the event */
 						setTimeout(function(){
 						    location.reload();
