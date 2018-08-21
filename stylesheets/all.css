@@ -4838,4 +4838,24 @@ body {
     right: -1.5em;
     bottom: -1em; }
 
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ccc !important; }
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ccc !important; }
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ccc !important; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ccc !important; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ccc !important; }
+
 /*# sourceMappingURL=all.css.map */
