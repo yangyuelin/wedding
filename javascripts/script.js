@@ -93,7 +93,9 @@ $(function() {
 				success: function(response) {
 					console.log(response);
 					$('#alertModal').modal('show');
-					location.reload();
+					setTimeout(function(){
+					    location.reload();
+					},1000);
 				}
 			});
 		}
