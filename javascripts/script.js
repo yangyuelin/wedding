@@ -112,9 +112,12 @@ $(function() {
 				success: function(response) {
 					console.log(response);
 					$('#alertModal').modal('show');
-					setTimeout(function(){
-					    location.reload();
-					},1000);
+					$(".closes").click(function(event) {
+						/* Act on the event */
+						setTimeout(function(){
+						    location.reload();
+						},1000);
+					});
 				}
 			});
 		}
