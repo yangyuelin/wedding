@@ -38,18 +38,21 @@ function divClick() {
 }
 
 
-$(function() {
+$(function()
+{  
+      $('input').focusin(function()
+      {
+        input = $(this);
+        input.data('place-holder-text', input.attr('placeholder'))
+        input.attr('placeholder', '');
+      });
 
-	$('input').data('holder', $('input').attr('placeholder'));
-
-	$('input').focusin(function() {
-		$(this).attr('placeholder', '');
-	});
-	$('input').focusout(function() {
-		$(this).attr('placeholder', $(this).data('holder'));
-	});
+      $('input').focusout(function()
+      {
+          input = $(this);
+          input.attr('placeholder', input.data('place-holder-text'));
+      });
 })
-
 
 
 
