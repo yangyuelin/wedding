@@ -12,6 +12,7 @@ function divClick() {
 			document.getElementById("form-1").style.display = "flex";
 			document.getElementById("form-2").style.display = "block";
 			document.getElementById("form-3").style.display = "block";
+			document.getElementById("form-4").style.display = "block";
 			break;
 		case '2':
 			document.getElementById("form-1").style.display = "flex";
