@@ -93,7 +93,7 @@ $(function() {
 				success: function(response) {
 					console.log(response);
 					$('#alertModal').modal('show');
-					// alert('感謝您的填寫！！');
+					location.reload();
 				}
 			});
 		}
