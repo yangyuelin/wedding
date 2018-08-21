@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>10/14『岳霖&柏芳』婚宴邀請表單</title>
+		<link rel="stylesheet" href="stylesheets/all.css">
+	</head>
+	<body>
+		<header class="header p-3">
+			<div class="date"></div>
+			<div class="item mx-auto text-secondary">
+				<p class="mb-0 p-4">親愛的親朋好友，我們要結婚了!! 10/14邀請您一同分享我們的喜悅</p>
+			</div>
+			<div class="triangle"></div>
+		</header>
+		<section class="container">
+			<div class="row py-5 content">
+				<div class="col-md-8 pb-5">
+					<form id="needs-validation" novalidate class="item i-1 p-4 bg-white text-secondary ">
+						<div class="form-group">
+							<p class="mb-2">請問您為男方親友女方親友*</p>
+							<div class="custom-control custom-radio  custom-control-inline">
+								<input type="radio" id="m" name="gender" class="custom-control-input" required>
+								<label class="custom-control-label" for="m">男方親友</label>
+							</div>
+							<div class="custom-control custom-radio custom-control-inline">
+								<input type="radio" id="f" name="gender" class="custom-control-input" required>
+								<label class="custom-control-label" for="f">女方親友</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="name">請輸入您的中文全名*</label>
+							<input type="text" class="form-control select" id="name" placeholder="王大明" required>
+						</div>
+						<div class="form-group">
+							<p class="mb-2">請選擇喜帖形式*</p>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="invitation-1" name="invitation" class="custom-control-input" value="1" onclick="divClick();" required>
+								<label class="custom-control-label" for="invitation-1">想要紙本喜帖請寄給我</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="invitation-2" name="invitation" class="custom-control-input" value="2" onclick="divClick();" required>
+								<label class="custom-control-label" for="invitation-2">無法參加，但想表示祝福。請寄給我</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="invitation-3" name="invitation" class="custom-control-input" value="3" onclick="divClick();" required>
+								<label class="custom-control-label" for="invitation-3">婚宴資訊都了解了，不用喜帖</label>
+							</div>
+						</div>
+						<div class="form-group form-row" id="form-1">
+							<p class="col-12 mb-2">請輸入您的地址*</p>
+							<div class="col-3">
+								<input type="text" id="adderssN" class="form-control" placeholder="郵遞區號" required>
+							</div>
+							<div class="col">
+								<input type="text" id="adderssT" class="form-control" placeholder="地址" required>
+							</div>
+						</div>
+						<div class="form-group" id="form-2">
+							<label for="number">請輸入參加人數*</label>
+							<input type="number" class="form-control" id="number" value="2" placeholder="請輸入人數" required>
+						</div>
+						<div class="form-group" id="form-3">
+							<label for="childSeat">請問是否需要兒童坐椅</label>
+							<input type="number" class="form-control" id="childSeat" value="0" placeholder="請輸入數量" required>
+						</div>
+						<div class="form-group" id="form-4">
+							<label for="vegetarian">請問是否需要素食</label>
+							<input type="number" class="form-control" id="vegetarian" value="0" placeholder="請輸入數量" required>
+						</div>
+						<div class="mt-5 text-center">
+							<button type="button" id="sendOrder" class="btn btn-primary text-white">送出</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-4 align-self-end">
+					<div class="item i-2 bg-cover mt-4"></div>
+				</div>
+			</div>
+			<div class="row py-5">
+				<div class="col-md-7">
+					<div class="item i-3 text-secondary bg-white p-4">
+						<h3>婚宴資訊</h3>
+						<p class="mb-0">時間：10/14 午宴</p>
+						<p class="mb-0">地點：新莊富基婚宴會館 新北市新莊區建國一路99號</p>
+					</div>
+				</div>
+				<div class="col-md-12 mt-5">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.1605103165057!2d121.43284821539174!3d25.028626344659973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7e59239e0d7%3A0x7da9629c90e90051!2z5a-M5Z-65ama5a605pyD6aSoLeaWsOiOiuW6lw!5e0!3m2!1szh-TW!2stw!4v1534480024432"
+					width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="row py-5">
+				<div class="col-md-7 mr-auto">
+					<div class="item i-4 bg-cover mt-4"></div>
+				</div>
+				<div class="col-md-4 align-self-start text-secondary bg-white text-right p-4 mt-5">
+					<p class="h3 font-weight-normal mb-0 pt-5">岳霖&柏芳</p>
+					<p class="h3 font-weight-normal mb-0">THANK YOU</p>
+				</div>
+			</div>
+		</section>
+		<footer class="pt-5">
+			<div class="container text-secondary"> ©岳霖&柏芳</div>
+		</footer>
+		<div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="text-right">
+						<button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body text-center py-4">
+						<p class="mb-4">已完成，感謝您的填寫!!</p>
+						<!-- <button type="button" class="btn btn-primary text-white" data-dismiss="modal">關閉</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="javascripts/vendor.js"></script>
+		<script src="javascripts/script.js"></script>
+	</body>
+</html>
