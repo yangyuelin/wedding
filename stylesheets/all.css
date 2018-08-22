@@ -4858,4 +4858,14 @@ body {
   /* Microsoft Edge */
   color: #ccc !important; }
 
+@media (max-width: 768px) {
+  .header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/02_mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden; } }
+
 /*# sourceMappingURL=all.css.map */
